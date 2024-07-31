@@ -1,0 +1,52 @@
+.mygigs{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 80%;
+        padding: 50px 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                background-color:#1dbf73 ;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                font-weight: 500;
+                cursor: pointer;
+                border-radius: 5px;
+
+            }
+        }
+        table{
+            width: 100%;
+            tr{
+                height: 50px;
+                th{
+                    text-align: left;
+                    
+                }
+                td{
+                    sup{
+                        font-size: 12px;
+                    }
+                }
+                img{
+                    width: 50px;
+                    height: 25px;
+                    object-fit: cover;
+                }
+                .delete{
+                    
+                    width: 20px;
+                    cursor: pointer;
+                }
+                &:nth-child(even){
+                    background: #1dbf730f;
+                }
+            }
+        }
+    }
+}
